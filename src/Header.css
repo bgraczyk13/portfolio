@@ -1,0 +1,41 @@
+.header {
+  background-color: #303c6c;
+  display: flex;
+  padding: 20px;
+  font-size: 20px;
+  justify-content: space-between;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.header__image {
+  object-fit: contain;
+  height: 40px;
+  width: 40px;
+}
+
+.header > ul {
+  list-style: none;
+  display: flex;
+  align-items: center;
+}
+
+.header > ul > a {
+  text-decoration: none;
+  color: white;
+  font-weight: 600;
+}
+.header > ul > a > li {
+  padding-right: 115px;
+  cursor: pointer;
+  font-size: 28px;
+  font-family: "Courier New", Courier, monospace;
+  /* CONTROLS HEADER STYLE */
+}
+
+.header__home--active,
+.header__portfolio--active,
+.header__about--active {
+  color: blue;
+}
